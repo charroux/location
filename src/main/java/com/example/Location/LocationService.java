@@ -38,12 +38,5 @@ public class LocationService {
 		}
 		return null;
 	}
-	
-	@RequestMapping(value="/car", method=RequestMethod.GET) 
-	@ResponseStatus(HttpStatus.OK) 
-	public Car carInfo() {
-		Car car = new Car("Peugeot", "11AA22", 1000);
-		return car;
-	}
 
 }
