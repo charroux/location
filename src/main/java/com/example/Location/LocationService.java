@@ -43,7 +43,30 @@ public class LocationService {
 	@RequestMapping(value="/cars/{plaque}", method=RequestMethod.PUT) 
 	@ResponseStatus(HttpStatus.OK) 
 	public void louerRamener(@PathVariable("plaque") String plateNumber, @RequestParam(value="louer", required = true)boolean rent) {
-		System.out.println("plaque=" + plateNumber + " rent=" + rent);
+		int i=0;
+		while(i<cars.size() && cars.get(i).getPlateNumber().equals(plateNumber)==false){
+			i++;
+		}
+		if(i<cars.size()){
+			if(rent == true){
+				cars.get(i).setRented(true);	
+			} else {
+				cars.get(i).setRented(false);	
+			}
+		}
+	}
+	
+	@RequestMapping(value="/cars/{plaque}", method=RequestMethod.DELETE) 
+	@ResponseStatus(HttpStatus.OK) 
+	public void supprimer(@PathVariable("plaque") String plateNumber) {
+		int i=0;
+		while(i<cars.size() && cars.get(i).getPlateNumber().equals(plateNumber)==false){
+			i++;
+		}
+		System.out.println(i);
+		if(i<cars.size()){
+			cars.remove(i);
+		}
 	}
 
 
