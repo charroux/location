@@ -31,3 +31,18 @@ https://github.com/charroux/location/blob/main/src/main/java/com/example/locatio
 ### Création voiture dans le constructeur
 
 https://github.com/charroux/location/blob/main/src/main/java/com/example/location/web/LocationWebService.java
+
+### Activation de la console
+
+https://github.com/charroux/location/blob/main/src/main/resources/application.properties
+
+### Lancement de main
+
+Dans le navigateur : http://localhost:8080/h2-console
+
+Chercher l'adresse de la base dans la console (sdtout) indiquée à : H2 console available at '/h2-console'
+
+Et remplir la chamos JDBC URL dans l(interface de connection)
+
+
+
