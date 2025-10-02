@@ -14,16 +14,20 @@ curl --header "Content-Type: application/json" \
 
 ### Ajout librairie JPA
 
-voir data-jpa dans dependencies :
+voir data-jpa dans dependencies : https://github.com/charroux/location/blob/main/build.gradle
 
 ### Ajout librairie base de données H2
 
-voir h2 dependencies :
+voir h2 dependencies : https://github.com/charroux/location/blob/main/build.gradle
 
 ### Classe Java avec annotation @Entity et &Id
 
+https://github.com/charroux/location/blob/main/src/main/java/com/example/location/data/Car.java
+
 ### Interface pour accéder à la base de données
+
+https://github.com/charroux/location/blob/main/src/main/java/com/example/location/data/CarRepository.java
 
 ### Création voiture dans le constructeur
 
-
+https://github.com/charroux/location/blob/main/src/main/java/com/example/location/web/LocationWebService.java
