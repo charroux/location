@@ -1,12 +1,22 @@
 package com.example.location.web;
 
 import com.example.location.data.Car;
+import com.example.location.data.CarRepository;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
 public class LocationWebService {
+
+    CarRepository carRepository;
+
+    public LocationWebService(CarRepository carRepository){
+        this.carRepository = carRepository;
+        Car ferrari = new Car();
+        ferrari.setPlaque("11AA22");
+        carRepository.save(ferrari);
+    }
 
     Logger logger = LoggerFactory.getLogger(LocationWebService.class);
 
