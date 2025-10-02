@@ -42,7 +42,7 @@ Dans le navigateur : http://localhost:8080/h2-console
 
 Chercher l'adresse de la base dans la console (sdtout) indiquée à : H2 console available at '/h2-console'
 
-Et remplir la chamos JDBC URL dans l(interface de connection)
+Et remplir la chamos JDBC URL dans l'interface de connection.
 
 
 
